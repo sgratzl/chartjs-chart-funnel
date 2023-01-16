@@ -6,7 +6,11 @@ Chart.js module for charting funnel plots. This plugin extends with a new char t
 
 A Funnel chart is a variant of a bar chart where the bar shrinks on one side to the size of the next bar. In addition, they are usually centered giving the visual impression of a funnel.
 
-![funnel chart]()
+![funnel chart](https://user-images.githubusercontent.com/4129778/212717664-b3c63b7f-022b-4a39-953c-9d6e45265f7c.png)
+
+Works great with https://github.com/chartjs/chartjs-plugin-datalabels
+
+![funnel chart with labels](https://user-images.githubusercontent.com/4129778/212717832-5932802e-01d2-4da4-82eb-c4f9d3d1eebe.png)
 
 ## Related Plugins
 
@@ -24,14 +28,14 @@ Check out also my other chart.js plugins:
 ## Install
 
 ```bash
-npm install --save chart.js chartjs-chart-funnel
+npm install chart.js chartjs-chart-funnel
 ```
 
 ## Usage
 
 see [Samples](https://github.com/sgratzl/chartjs-chart-funnel/tree/main/samples) on Github
 
-and [![Open in CodePen][codepen]](TODO)
+and [![Open in CodePen][codepen]](https://codepen.io/sgratzl/pen/eYjEXQW)
 
 ## Styling
 
