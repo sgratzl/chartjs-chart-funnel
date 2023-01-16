@@ -1,0 +1,17 @@
+/.pnp*
+/.yarnrc.yml
+/.yarn
+/build
+/docs
+/coverage
+/.gitattributes
+/.gitignore
+/.prettierignore
+/LICENSE
+/yarn.lock
+/.vscode
+*.png
+*.tgz
+*.tsbuildinfo
+.eslintcache
+/samples/type_test.js
