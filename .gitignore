@@ -1,0 +1,27 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+/coverage
+/node_modules
+.npm
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/versions
+.pnp.*
+
+# Build files
+/.tmp
+/build
+
+*.tgz
+/.vscode/extensions.json
+/docs
+*.tsbuildinfo
+.eslintcache
+__diff_output__
+
+/samples/type_test.js
