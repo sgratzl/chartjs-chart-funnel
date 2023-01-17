@@ -57,9 +57,12 @@ import { FunnelController, TrapezoidElement } from 'chartjs-chart-funnel';
 Chart.register(FunnelController, TrapezoidElement, LinearScale, CategoryScale);
 
 const chart = new Chart(document.getElementById('canvas').getContext('2d'), {
-  type: FunnelController.id,
+  type: 'funnel',
   data: {
-    // TODO
+    labels: ['Step 1', 'Step 2', 'Step 3', 'Step 4'],
+    datasets: [{
+      data: [0.7, 0.66, 0.61, 0.01],
+    }]
   },
 });
 ```
