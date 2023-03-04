@@ -1,0 +1,16 @@
+{
+  "name": "chartjs-chart-funnel",
+  "type": "commonjs",
+  "main": "../build/index.cjs",
+  "module": "../build/index.js",
+  "require": "../build/index.cjs",
+  "types": "../build/index.d.ts",
+  "sideEffects": false,
+  "peerDependencies": {
+    "chart.js": ">=3.7.0"
+  },
+  "dependencies": {
+    "@types/chroma-js": "^2.4.0",
+    "chroma-js": "^2.4.2"
+  }
+}
