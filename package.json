@@ -36,12 +36,14 @@
       "scripts": "./build/index.umd.min.js",
       "types": "./build/index.d.ts"
     },
-    "./.pnp.cjs": "./.pnp.cjs"
+    "./.pnp.cjs": "./.pnp.cjs",
+    "./c": "./c"
   },
   "sideEffects": false,
   "files": [
     "build",
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "c"
   ],
   "peerDependencies": {
     "chart.js": ">=3.7.0"
