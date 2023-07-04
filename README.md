@@ -33,7 +33,7 @@ npm install chart.js chartjs-chart-funnel
 
 ## Usage
 
-see [Samples](https://github.com/sgratzl/chartjs-chart-funnel/tree/main/samples) on Github
+see [Examples](https://www.sgratzl.com/chartjs-chart-funnel/examples/)
 
 and [![Open in CodePen][codepen]](https://codepen.io/sgratzl/pen/eYjEXQW)
 
