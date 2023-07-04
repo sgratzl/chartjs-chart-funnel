@@ -8,7 +8,6 @@ A Funnel chart is a variant of a bar chart where the bar shrinks on one side to 
 
 ![funnel chart](https://user-images.githubusercontent.com/4129778/212717664-b3c63b7f-022b-4a39-953c-9d6e45265f7c.png)
 
-
 ## Install
 
 ```sh
