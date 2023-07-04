@@ -51,23 +51,44 @@ function transpose(m: { horizontal: boolean; left: number; top: number; right: n
 
 // need to make it a bar element for proper data label support
 export class TrapezoidElement extends BarElement {
+  /**
+   * @internal
+   */
   // <TrapezoidElementProps, TrapezoidElementOptions> implements VisualElement {
   static readonly id = 'trapezoid';
 
+  /**
+   * @internal
+   */
   declare options: BarOptions & TrapezoidElementOptions;
 
+  /**
+   * @internal
+   */
   static readonly defaults = /* #__PURE__ */ {
     ...BarElement.defaults,
     shrinkAnchor: 'top',
     shrinkFraction: 1,
   };
 
+  /**
+   * @internal
+   */
   static readonly defaultRoutes = /* #__PURE__ */ BarElement.defaultRoutes;
 
+  /**
+   * @internal
+   */
   align: 'left' | 'right' | 'center' = 'center';
 
+  /**
+   * @internal
+   */
   next: TrapezoidElement | undefined = undefined;
 
+  /**
+   * @internal
+   */
   previous: TrapezoidElement | undefined = undefined;
 
   private getBounds(useFinalPosition = false) {
@@ -95,6 +116,9 @@ export class TrapezoidElement extends BarElement {
     }
   }
 
+  /**
+   * @internal
+   */
   inRange(mouseX: number | null, mouseY: number | null, useFinalPosition: boolean) {
     const bb = this.getBounds(useFinalPosition);
     const inX = mouseX == null || inBetween(mouseX, bb.left, bb.right);
@@ -102,14 +126,23 @@ export class TrapezoidElement extends BarElement {
     return inX && inY;
   }
 
+  /**
+   * @internal
+   */
   inXRange(mouseX: number, useFinalPosition: boolean) {
     return this.inRange(mouseX, null, useFinalPosition);
   }
 
+  /**
+   * @internal
+   */
   inYRange(mouseY: number, useFinalPosition: boolean) {
     return this.inRange(null, mouseY, useFinalPosition);
   }
 
+  /**
+   * @internal
+   */
   getCenterPoint(useFinalPosition: boolean) {
     const { x, y, base, horizontal } = this.getProps(['x', 'y', 'base', 'horizontal'], useFinalPosition);
     const r = {
@@ -129,10 +162,16 @@ export class TrapezoidElement extends BarElement {
     return r;
   }
 
+  /**
+   * @internal
+   */
   tooltipPosition(useFinalPosition: boolean): { x: number; y: number } {
     return this.getCenterPoint(useFinalPosition);
   }
 
+  /**
+   * @internal
+   */
   getRange(axis: string) {
     const { width, height } = this.getProps(['width', 'height']);
     // const factor;
@@ -214,6 +253,9 @@ export class TrapezoidElement extends BarElement {
     return points;
   }
 
+  /**
+   * @internal
+   */
   draw(ctx: CanvasRenderingContext2D): void {
     const { options } = this;
     ctx.save();
