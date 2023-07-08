@@ -34,9 +34,6 @@ export class FunnelController extends BarController {
    */
   declare options: FunnelChartOptions;
 
-  /**
-   * @internal
-   */
   static readonly id: string = 'funnel';
 
   /**
