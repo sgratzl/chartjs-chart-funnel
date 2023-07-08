@@ -51,9 +51,6 @@ function transpose(m: { horizontal: boolean; left: number; top: number; right: n
 
 // need to make it a bar element for proper data label support
 export class TrapezoidElement extends BarElement {
-  /**
-   * @internal
-   */
   // <TrapezoidElementProps, TrapezoidElementOptions> implements VisualElement {
   static readonly id = 'trapezoid';
 
