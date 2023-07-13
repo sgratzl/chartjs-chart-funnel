@@ -55,12 +55,12 @@ export class TrapezoidElement extends BarElement {
   static readonly id = 'trapezoid';
 
   /**
-   * @internal
+   * @hidden
    */
   declare options: BarOptions & TrapezoidElementOptions;
 
   /**
-   * @internal
+   * @hidden
    */
   static readonly defaults = /* #__PURE__ */ {
     ...BarElement.defaults,
@@ -69,22 +69,22 @@ export class TrapezoidElement extends BarElement {
   };
 
   /**
-   * @internal
+   * @hidden
    */
   static readonly defaultRoutes = /* #__PURE__ */ BarElement.defaultRoutes;
 
   /**
-   * @internal
+   * @hidden
    */
   align: 'left' | 'right' | 'center' = 'center';
 
   /**
-   * @internal
+   * @hidden
    */
   next: TrapezoidElement | undefined = undefined;
 
   /**
-   * @internal
+   * @hidden
    */
   previous: TrapezoidElement | undefined = undefined;
 
@@ -114,7 +114,7 @@ export class TrapezoidElement extends BarElement {
   }
 
   /**
-   * @internal
+   * @hidden
    */
   inRange(mouseX: number | null, mouseY: number | null, useFinalPosition: boolean) {
     const bb = this.getBounds(useFinalPosition);
@@ -124,21 +124,21 @@ export class TrapezoidElement extends BarElement {
   }
 
   /**
-   * @internal
+   * @hidden
    */
   inXRange(mouseX: number, useFinalPosition: boolean) {
     return this.inRange(mouseX, null, useFinalPosition);
   }
 
   /**
-   * @internal
+   * @hidden
    */
   inYRange(mouseY: number, useFinalPosition: boolean) {
     return this.inRange(null, mouseY, useFinalPosition);
   }
 
   /**
-   * @internal
+   * @hidden
    */
   getCenterPoint(useFinalPosition: boolean) {
     const { x, y, base, horizontal } = this.getProps(['x', 'y', 'base', 'horizontal'], useFinalPosition);
@@ -160,14 +160,14 @@ export class TrapezoidElement extends BarElement {
   }
 
   /**
-   * @internal
+   * @hidden
    */
   tooltipPosition(useFinalPosition: boolean): { x: number; y: number } {
     return this.getCenterPoint(useFinalPosition);
   }
 
   /**
-   * @internal
+   * @hidden
    */
   getRange(axis: string) {
     const { width, height } = this.getProps(['width', 'height']);
@@ -251,7 +251,7 @@ export class TrapezoidElement extends BarElement {
   }
 
   /**
-   * @internal
+   * @hidden
    */
   draw(ctx: CanvasRenderingContext2D): void {
     const { options } = this;
