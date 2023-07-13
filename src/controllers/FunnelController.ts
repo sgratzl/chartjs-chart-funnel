@@ -30,14 +30,14 @@ export interface FunnelChartOptions {
 
 export class FunnelController extends BarController {
   /**
-   * @internal
+   * @hidden
    */
   declare options: FunnelChartOptions;
 
   static readonly id: string = 'funnel';
 
   /**
-   * @internal
+   * @hidden
    */
   static readonly defaults: any = /* #__PURE__ */ merge({}, [
     BarController.defaults,
@@ -50,7 +50,7 @@ export class FunnelController extends BarController {
   ]);
 
   /**
-   * @internal
+   * @hidden
    */
   static readonly overrides: any = /* #__PURE__ */ merge({}, [
     (BarController as any).overrides,
@@ -115,7 +115,7 @@ export class FunnelController extends BarController {
   ]);
 
   /**
-   * @internal
+   * @hidden
    */
   getMinMax(scale: Scale, canStack?: boolean | undefined): { min: number; max: number } {
     const { max } = super.getMinMax(scale, canStack);
@@ -129,7 +129,7 @@ export class FunnelController extends BarController {
   }
 
   /**
-   * @internal
+   * @hidden
    */
   update(mode: UpdateMode): void {
     super.update(mode);
