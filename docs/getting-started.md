@@ -28,6 +28,6 @@ you can either provide percentages (values between 0 and 1) or absolute values (
 
 ### Styling
 
-Trapezoid Elements are Bar elements and provide the same coloring options. In addition, see [TrapezoidElementOptions](/api/interfaces/interface.TrapezoidElementOptions.md) custom option with respect to shrinking behavior.
+Trapezoid Elements are Bar elements and provide the same coloring options. In addition, see [TrapezoidElementOptions](/api/interfaces/TrapezoidElementOptions.md) custom option with respect to shrinking behavior.
 
-In addition, the FunnelController has the following options [FunnelController](/api/interfaces/interface.FunnelChartOptions.md) to customize the alignment of the chart.
+In addition, the FunnelController has the following options [FunnelController](/api/interfaces/FunnelChartOptions.md) to customize the alignment of the chart.
