@@ -96,19 +96,19 @@ export class TrapezoidElement extends BarElement {
     );
     if (horizontal) {
       const w = Math.abs(x - base);
-      let left = base - (this.align !== 'left' ? w : 0);
-      let right = base + (this.align !== 'right' ? w : 0);
-      let half = height / 2;
-      let top = y - half;
-      let bottom = y + half;
+      const left = base - (this.align !== 'left' ? w : 0);
+      const right = base + (this.align !== 'right' ? w : 0);
+      const half = height / 2;
+      const top = y - half;
+      const bottom = y + half;
       return { left, top, right, bottom, horizontal };
     } else {
       const h = Math.abs(y - base);
-      let half = width / 2;
-      let left = x - half;
-      let right = x + half;
-      let top = base - (this.align !== 'right' ? h : 0);
-      let bottom = base + (this.align !== 'left' ? h : 0);
+      const half = width / 2;
+      const left = x - half;
+      const right = x + half;
+      const top = base - (this.align !== 'right' ? h : 0);
+      const bottom = base + (this.align !== 'left' ? h : 0);
       return { left, top, right, bottom, horizontal };
     }
   }

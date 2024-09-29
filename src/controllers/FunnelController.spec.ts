@@ -2,7 +2,7 @@ import { CategoryScale, LinearScale, registry } from 'chart.js';
 import createChart from '../__tests__/createChart';
 import { FunnelController } from './FunnelController';
 import { TrapezoidElement } from '../elements';
-
+import { describe, beforeAll } from 'vitest';
 describe('funnel', () => {
   beforeAll(() => {
     registry.addControllers(FunnelController);
