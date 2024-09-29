@@ -2,14 +2,14 @@ import { CategoryScale, LinearScale, registry } from 'chart.js';
 import createChart from '../__tests__/createChart';
 import { FunnelController } from './FunnelController';
 import { TrapezoidElement } from '../elements';
-import { describe, beforeAll } from 'vitest';
+import { describe, beforeAll, test } from 'vitest';
 describe('funnel', () => {
   beforeAll(() => {
     registry.addControllers(FunnelController);
     registry.addElements(TrapezoidElement);
     registry.addScales(LinearScale, CategoryScale);
   });
-  it('default', () => {
+  test('default', () => {
     const chart = createChart(
       {
         type: 'funnel',
@@ -30,7 +30,7 @@ describe('funnel', () => {
     );
     return chart.toMatchImageSnapshot();
   });
-  it('horizontal', () => {
+  test('horizontal', () => {
     const chart = createChart(
       {
         type: 'funnel',
@@ -51,7 +51,7 @@ describe('funnel', () => {
     );
     return chart.toMatchImageSnapshot();
   });
-  it('numbers', () => {
+  test('numbers', () => {
     const chart = createChart(
       {
         type: 'funnel',
@@ -72,7 +72,7 @@ describe('funnel', () => {
     );
     return chart.toMatchImageSnapshot();
   });
-  it.each(['top', 'bottom', 'none', 'middle'])('shrink-%s', (shrinkAnchor: string) => {
+  test.each(['top', 'bottom', 'none', 'middle'])('shrink-%s', (shrinkAnchor: string) => {
     const chart = createChart(
       {
         type: 'funnel',
@@ -94,7 +94,7 @@ describe('funnel', () => {
     );
     return chart.toMatchImageSnapshot();
   });
-  it.each(['top', 'bottom', 'none', 'middle'])('hor-shrink-%s', (shrinkAnchor: string) => {
+  test.each(['top', 'bottom', 'none', 'middle'])('hor-shrink-%s', (shrinkAnchor: string) => {
     const chart = createChart(
       {
         type: 'funnel',
@@ -116,7 +116,7 @@ describe('funnel', () => {
     );
     return chart.toMatchImageSnapshot();
   });
-  it.each(['0', '0.25', '0.5', '0.75', '1'])('shrink-fraction-%s', (shrinkFraction: string) => {
+  test.each(['0', '0.25', '0.5', '0.75', '1'])('shrink-fraction-%s', (shrinkFraction: string) => {
     const chart = createChart(
       {
         type: 'funnel',
@@ -138,7 +138,7 @@ describe('funnel', () => {
     );
     return chart.toMatchImageSnapshot();
   });
-  it.each(['0', '0.25', '0.5', '0.75', '1'])('hor-shrink-fraction-%s', (shrinkFraction: string) => {
+  test.each(['0', '0.25', '0.5', '0.75', '1'])('hor-shrink-fraction-%s', (shrinkFraction: string) => {
     const chart = createChart(
       {
         type: 'funnel',
@@ -161,7 +161,7 @@ describe('funnel', () => {
     return chart.toMatchImageSnapshot();
   });
 
-  it.each(['left', 'right', 'center'])('align-%s', (align: string) => {
+  test.each(['left', 'right', 'center'])('align-%s', (align: string) => {
     const chart = createChart(
       {
         type: 'funnel',
@@ -183,7 +183,7 @@ describe('funnel', () => {
     );
     return chart.toMatchImageSnapshot();
   });
-  it.each(['left', 'right', 'center'])('hor-align-%s', (align: string) => {
+  test.each(['left', 'right', 'center'])('hor-align-%s', (align: string) => {
     const chart = createChart(
       {
         type: 'funnel',
