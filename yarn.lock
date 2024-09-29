@@ -2224,6 +2224,7 @@ __metadata:
     canvas-5-polyfill: "npm:^0.1.5"
     chart.js: "npm:^4.4.4"
     chartjs-plugin-datalabels: "npm:^2.2.0"
+    chartjs-plugin-hierarchical: "npm:^4.4.1"
     chroma-js: "npm:^3.1.1"
     eslint: "npm:^9.11.1"
     eslint-plugin-prettier: "npm:^5.2.1"
@@ -2257,6 +2258,15 @@ __metadata:
   peerDependencies:
     chart.js: ">=3.0.0"
   checksum: 10c0/de4855a795e4eef34869a16db1a8a0f905b6dfed0258c733338f472625361eb56fb899214b18651c1c1064cd343a78285ba576576693a40ec51285a84f022ea0
+  languageName: node
+  linkType: hard
+
+"chartjs-plugin-hierarchical@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "chartjs-plugin-hierarchical@npm:4.4.1"
+  peerDependencies:
+    chart.js: ^4.1.0
+  checksum: 10c0/04bd82240208c1625a4056ff2207f7b83815d0f5efce8a338f0f2d0c806d6ef72ec4f68ff74a77af093f83f2106277521b23665f1271b3957ed52146af910930
   languageName: node
   linkType: hard
 
