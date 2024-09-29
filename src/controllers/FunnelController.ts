@@ -19,7 +19,6 @@ import { pickForegroundColorToBackgroundColor, blues } from '../color';
 import { TrapezoidElement, TrapezoidElementOptions } from '../elements';
 import patchController from './patchController';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface FunnelChartOptions {
   /**
    * alignment of the elements one of center, left, right
