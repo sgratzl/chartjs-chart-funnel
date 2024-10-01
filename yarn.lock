@@ -2262,11 +2262,11 @@ __metadata:
   linkType: hard
 
 "chartjs-plugin-hierarchical@npm:^4.4.1":
-  version: 4.4.1
-  resolution: "chartjs-plugin-hierarchical@npm:4.4.1"
+  version: 4.4.2
+  resolution: "chartjs-plugin-hierarchical@npm:4.4.2"
   peerDependencies:
     chart.js: ^4.1.0
-  checksum: 10c0/04bd82240208c1625a4056ff2207f7b83815d0f5efce8a338f0f2d0c806d6ef72ec4f68ff74a77af093f83f2106277521b23665f1271b3957ed52146af910930
+  checksum: 10c0/3342c7ca1f30e0944280c98ec9940b8cf934be3735709a13d80d997f702ef79ae4f8fe5121d21bf5a8bc938d3cc001d86c1edb37b3cbb54946349a5e3517e6bc
   languageName: node
   linkType: hard
 
